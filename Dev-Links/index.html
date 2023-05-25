@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Links | DevN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/link.svg">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="profile">
+        <img class="dark"
+          src="./assets/avatar.png"
+          alt="imagem do avatar de Vagner Junior com um fundo azul"
+        />
+
+        <p>@VagnerJunior</p>
+      </div>
+
+      <div id="switch">
+        <button id="btn-handle" onclick="toggle()"></button>
+        <span onclick="toggle()"></span>
+      </div>
+
+      <div id="links">
+        <ul class="links">
+          <li class="link">
+            <a href="">Inscreva-se no NLW</a>
+          </li>
+          <li class="link">
+            <a href="">Baixe meu e-book</a>
+          </li>
+          <li class="link">
+            <a href="">Veja meu portfólio</a>
+          </li>
+          <li class="link">
+            <a href="">Conheça o Explorer</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="social">
+        <ul class="social">
+          <li>
+            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+
+      <footer>Feito por <a href="">Vagner Junior</a></footer>
+    </div>
+
+    <script src="script.js"></script>
+    <!--Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
