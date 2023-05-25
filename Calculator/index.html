@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator | DevN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/calculator.svg" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="view">
+        <p class="equation">1 + 1</p>
+
+        <h1>
+          <i class="ph-equals"></i>
+          <span id="response">2</span>
+        </h1>
+      </div>
+
+      <div id="numbers">
+        <button class="cancel-enter">CE</button>
+        <button class="cancel">C</button>
+        <button class="operator percent" value="%">%</button>
+        <button class="operator divide" value="/">
+          <i class="ph-divide"></i>
+        </button>
+        <button class="number one" value="1">1</button>
+        <button class="number two" value="2">2</button>
+        <button class="number three" value="3">3</button>
+        <button class="operator times" value="x">
+          <i class="ph-x"></i>
+        </button>
+        <button class="number four" value="4">4</button>
+        <button class="number five" value="5">5</button>
+        <button class="number six" value="6">6</button>
+        <button class="operator minus" value="-">
+          <i class="ph-minus"></i>
+        </button>
+        <button class="number seven" value="7">7</button>
+        <button class="number eight" value="8">8</button>
+        <button class="number nine" value="9">9</button>
+        <button class="operator plus" value="+">
+          <i class="ph-plus"></i>
+        </button>
+        <button class="plus-minus">
+          <i class="ph-plus-minus" value=""></i>
+        </button>
+        <button class="number zero" value="0">0</button>
+        <button class="comma" value=".">,</button>
+        <button class="equals">
+          <i class="ph-equals" value=""></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

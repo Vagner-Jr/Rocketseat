@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | DevN</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="login">
+      <header>
+        <img src="./assets/logo.svg" alt="logo camp.in" />
+      </header>
+
+      <div id="form">
+        <header>
+          <h1>
+            <img src="./assets/log-in.svg" alt="imagem do log-in" />
+            Faça seu login
+          </h1>
+          <p>Entre com suas informações de cadastro</p>
+        </header>
+
+        <form action="/" method="get">
+          <label for="email">E-mail</label>
+          <div class="email-box">
+            <img src="./assets/mail-focus.svg" alt="" />
+            <input type="email" id="email" placeholder="Digite seu email." />
+          </div>
+
+          <label for="password">Senha</label>
+          <div class="password-box">
+            <span>
+              <img src="./assets/lock.svg" alt="" />
+              <input
+                type="password"
+                id="password"
+                placeholder="Digite sua senha."
+              />
+            </span>
+            <img src="./assets/eye.svg" alt="" />
+          </div>
+
+          <div class="check-box">
+            <div class="input-check-box">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">Lembre me</label>
+            </div>
+
+            <p>Esqueci minha senha</p>
+          </div>
+
+          <button>Entrar</button>
+
+          <p>Não tem uma conta? <b>Resgistre-se</b></p>
+        </form>
+      </div>
+    </div>
+
+    <img src="./assets/side-image.jpg" alt="" />
+  </body>
+</html>

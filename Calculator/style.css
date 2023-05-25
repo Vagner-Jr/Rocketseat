@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-body: #807ECE;
+    --bg-app: #2D2A37;
+    --text-color: #fff;
+    --text-gray: #6B6B6B;
+    --bg-operator: #462878;
+}
+
+body * {
+    font-family: 'Rubik', sans-serif;
+    color: var(--text-color);
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    padding: 12px;
+    background: var(--bg-body);
+}
+
+div#app {
+    width: 340px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    padding: 54px 32px 32px;
+    border-radius: 50px;
+    background: var(--bg-app);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 188px 52px rgba(0, 0, 0, 0.01),
+        0px 120px 48px rgba(0, 0, 0, 0.04),
+        0px 68px 41px rgba(0, 0, 0, 0.15),
+        0px 30px 30px rgba(0, 0, 0, 0.26),
+        0px 8px 17px rgba(0, 0, 0, 0.29),
+        inset 0px 6px 8px rgba(255, 255,255, 0.1),
+        inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+}
+
+/*view*/
+div#view {
+    width: 100%;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 12px 22px 0px 18px;
+    margin-bottom: 24px;
+    border-radius: 20px 20px 10px 10px;
+}
+
+#view p {
+    font-size: 20px;
+    color: var(--text-gray);
+}
+
+#view h1 {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#view h1 i {
+    font-size: 20px;
+    color: var(--text-gray);
+    margin-right: auto;
+}
+
+#view h1 span {
+    margin-left: auto;
+}
+
+/*numbers*/
+div#numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+#numbers button {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity .4s ease;
+    font-size: 24px;
+
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01),
+        0px 7px 7px rgba(0, 0, 0, 0.04),
+        0px 4px 6px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.26),
+        0px 0px 2px rgba(0, 0, 0, 0.29),
+        inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+}
+
+#numbers button:hover {
+    opacity: 0.6;
+}
+
+#numbers button:first-child {
+    color: #975DFA;
+}
+
+
+#numbers .operator:not(.percent) {
+    background: var(--bg-operator);
+}
+
+#numbers button:last-child {
+    background: #7F45E2;
+}
