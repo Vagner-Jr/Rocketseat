@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-purple: #a29dff;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+div#app {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+div#app > img {
+    position: absolute;
+    width: 100%;
+}
+
+div#app img:first-child {
+    top: 0;
+}
+
+div#app img:last-child {
+    bottom: 0;
+}
+
+/*main*/
+main {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+div#counting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+div#counting > h1 {
+    color: var(--purple);
+}
+
+div#counting > p {
+    color: var(--text-color);
+}
+
+div#counting > button {
+    padding: 14px 32px;
+    border: 0;
+    border-radius: 12px;
+    color: var(--white);
+    background: var(--purple);
+    transition: 0.2s;
+}
+
+div#counting > button:hover {
+    background: var(--light-purple);
+}
+
+div#counting > button:focus {
+    outline: 2px solid var(--white);
+}
+
+div#timer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timer-el{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-el span{
+    font-size: 12px;
+    color: var(--light-grey);
+} 
+
+.timer-el p {
+    font-size: 64px;
+    Line-height: 100%;
+    color: var(--black);
+}
+
+dialog::backdrop {
+    background-color: white;
+    opacity: 0.5;
+}
+
+dialog {
+    height: 400px;
+    width: 280px; 
+    margin: auto;
+    padding: 24px 24px;
+    border: 2px solid var(--text-color);
+    border-radius: 12px;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}
+
+dialog h1{
+    color: var(--purple);
+    margin-bottom: 24px;
+}
+
+dialog label {
+    color: var(--text-color);
+} 
+
+dialog input {
+    width: 100%;
+    padding: 0 12px;
+    margin-bottom: 12px;
+    border: 0;
+    border-radius: 4px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+dialog input::placeholder {
+    color: var(--light-grey);
+}
+
+dialog button {
+    width: 100%;
+    margin-top: 32px;
+    padding: 14px 32px;
+    border: 0;
+    border-radius: 12px;
+    color: var(--white);
+    background: var(--purple);
+    transition: 0.2s;
+}
+
+dialog button:hover {
+    background: var(--light-purple);
+}
+dialog input:focus,
+dialog button:focus {
+    outline: 2px solid var(--white);
+}

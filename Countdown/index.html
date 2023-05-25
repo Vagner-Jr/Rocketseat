@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown | DevN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/calendar.svg" />
+  </head>
+
+  <body>
+    <div id="app">
+      <img src="./assets/top-image.svg" alt="" />
+
+      <main>
+        <div id="counting">
+          <h1>HAPPY NEW YEAR IN...</h1>
+
+          <div id="timer">
+            <div class="timer-el days-c">
+              <span>Dias</span>
+              <p class="text" id="days">00</p>
+            </div>
+
+            <div class="timer-el hours-c">
+              <span>Horas</span>
+              <p class="text" id="hours">00</p>
+            </div>
+
+            <div class="timer-el minutes-c">
+              <span>Minutos</span>
+              <p class="text" id="minutes">00</p>
+            </div>
+
+            <div class="timer-el seconds-c">
+              <span>Segundos</span>
+              <p class="text" id="seconds">00</p>
+            </div>
+          </div>
+
+          <p>Inscreva-se para saber mais sobre o lançamento!</p>
+
+          <button id="btn-subscribe">Inscreva-se</button>
+
+          <dialog>
+            <h1>Inscreva-se</h1>
+
+            <form action="/" method="post">
+              <label for="name">Nome</label><br />
+              <input
+                type="text"
+                id="name"
+                placeholder="Digite seu nome:"
+                required
+              />
+              <br />
+
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                id="email"
+                placeholder="Digite seu email:"
+                required
+              /><br />
+
+              <button id="btn-submit    ">Enviar</button>
+            </form>
+          </dialog>
+        </div>
+
+        <img src="./assets/rocket.svg" alt="Imagem de um foguete no espaço" />
+      </main>
+
+      <img src="./assets/bottom-image.svg" alt="" />
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
