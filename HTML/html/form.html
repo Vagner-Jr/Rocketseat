@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário | DevN</title>
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="icon" href="../assets/pen.svg">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <form action="/" method="post">
+        <fieldset>
+          <legend>Entre em contato</legend>
+
+          <label for="order-select">Assunto:</label>
+          <select name="order" id="order-select">
+            <optgroup>
+              <option value="">...</option>
+              <option value="suporte">Suporte</option>
+              <option value="sugerir">Sejestão</option>
+              <option value="reclamar">Reclamação</option>
+            </optgroup>
+          </select>
+
+          <label for="name">Nome completo:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Seu nome"
+            required
+            minlength="10"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="SeuEmailAqui@gmail.com"
+            required
+            pattern=".+@gmail\.com"
+          />
+
+          <label for="opinion">O que você achou?</label>
+          <textarea
+            name="opinion"
+            id="opinion"
+            cols="18"
+            rows="6"
+            placeholder="Digite aqui"
+            wrap="hard"
+            style="resize: none"
+          ></textarea>
+
+          <div class="checkbox">
+            <input type="checkbox" value="info" id="info" name="info" />
+            <label for="info">Aceito receber novidades por e-mail.</label>
+          </div>
+
+          <button>Enviar</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
