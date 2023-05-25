@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="icon" href="./assets/send.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RocketNews | DevN</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="form">
+        <img src="./assets/logo.svg" alt="logo do blog de notícias Rokecnews" />
+
+        <h1>atualize ideias e informações em 5 minutos</h1>
+        <h3>
+          tudo que você precisa saber para começar o seu dia bem e informado
+        </h3>
+        <p>
+          notícias sobre o universo rocketseat, e tudo o que precisa para
+          começar o dia melhor. <br />
+          perfeiro para se preparar para codar
+        </p>
+
+        <form action="/" method="post">
+          <label for="email">Insira seu email:</label><br />
+
+          <button id="btn-email">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="&nbsp;&nbsp;oi@rocketseat.com"
+              pattern=".+@rocketseat\.com"
+              title="Semente email com o domínio rocketseat.com"
+            />
+            <img src="./assets/send.svg" alt="imagem do botão para enviar o email">
+          </button>
+
+          <a href="" target="_blank">
+            deixe-me ler primeiro
+            <img src="./assets/arrow-right.svg" alt="iamgem da seta para ver os termos">
+          </a>
+        </form>
+      </div>
+
+      <img id="right-image" src="./assets/read_news.jpg" alt="" />
+    </div>
+  </body>
+</html>
